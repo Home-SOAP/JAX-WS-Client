@@ -12,7 +12,7 @@ import javax.xml.ws.Action;
  * JAX-WS RI 2.2.4-b01
  * Generated source version: 2.2
  */
-@WebService(name="WebServiceInterface", targetNamespace="http://ws.enterprise.javacodegeeks.com/")
+@WebService(name="WebServiceInterface", targetNamespace="http://ws.enterprise.javacodegeeks.com/") // com.javacodegeeks.enterprise.ws
 @SOAPBinding(style=SOAPBinding.Style.RPC)
 public interface WebServiceInterface {
     /**

@@ -12,37 +12,36 @@ import java.net.URL;
  */
 @WebServiceClient(name="WebServiceImplService", targetNamespace="http://ws.enterprise.javacodegeeks.com/", wsdlLocation="http://localhost:8888/webserive/helloworld?wsdl")
 public class WebServiceImplService extends Service {
-
-    private final static URL WEBSERVICEIMPLSERVICE_WSDL_LOCATION;
-    private final static WebServiceException WEBSERVICEIMPLSERVICE_EXCEPTION;
-    private final static QName WEBSERVICEIMPLSERVICE_QNAME = new QName("http://ws.enterprise.javacodegeeks.com/", "WebServiceImplService");
+    private final static URL WEBSERVICE_WSDL_LOCATION;
+    private final static WebServiceException WEBSERVICE_EXCEPTION;
+    private final static QName WEBSERVICE_QNAME = new QName("http://ws.enterprise.javacodegeeks.com/", "WebServiceImplService");
 
     static {
         URL url = null;
-        WebServiceException e = null;
+        WebServiceException exception = null;
         try {
             url = new URL("http://localhost:8888/webserive/helloworld?wsdl");
         } catch (MalformedURLException ex) {
-            e = new WebServiceException(ex);
+            exception = new WebServiceException(ex);
         }
-        WEBSERVICEIMPLSERVICE_WSDL_LOCATION = url;
-        WEBSERVICEIMPLSERVICE_EXCEPTION = e;
+        WEBSERVICE_WSDL_LOCATION = url;
+        WEBSERVICE_EXCEPTION = exception;
     }
 
     public WebServiceImplService() {
-        super(__getWsdlLocation(), WEBSERVICEIMPLSERVICE_QNAME);
+        super(__getWsdlLocation(), WEBSERVICE_QNAME);
     }
 
     public WebServiceImplService(WebServiceFeature... features) {
-        super(__getWsdlLocation(), WEBSERVICEIMPLSERVICE_QNAME, features);
+        super(__getWsdlLocation(), WEBSERVICE_QNAME, features);
     }
 
     public WebServiceImplService(URL wsdlLocation) {
-        super(wsdlLocation, WEBSERVICEIMPLSERVICE_QNAME);
+        super(wsdlLocation, WEBSERVICE_QNAME);
     }
 
     public WebServiceImplService(URL wsdlLocation, WebServiceFeature... features) {
-        super(wsdlLocation, WEBSERVICEIMPLSERVICE_QNAME, features);
+        super(wsdlLocation, WEBSERVICE_QNAME, features);
     }
 
     public WebServiceImplService(URL wsdlLocation, QName serviceName) {
@@ -74,8 +73,8 @@ public class WebServiceImplService extends Service {
     }
 
     private static URL __getWsdlLocation() {
-        if (WEBSERVICEIMPLSERVICE_EXCEPTION != null) throw WEBSERVICEIMPLSERVICE_EXCEPTION;
-        return WEBSERVICEIMPLSERVICE_WSDL_LOCATION;
+        if (WEBSERVICE_EXCEPTION != null) throw WEBSERVICE_EXCEPTION;
+        return WEBSERVICE_WSDL_LOCATION;
     }
 
 }

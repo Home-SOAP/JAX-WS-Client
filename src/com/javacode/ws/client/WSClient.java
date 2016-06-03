@@ -1,4 +1,4 @@
-package com.javacodegeeks.ws.client;
+package com.javacode.ws.client;
 
 public class WSClient {
 

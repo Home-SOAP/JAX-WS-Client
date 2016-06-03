@@ -1,4 +1,4 @@
-package com.javacodegeeks.ws.client;
+package com.javacode.ws.client;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;

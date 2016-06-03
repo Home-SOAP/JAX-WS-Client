@@ -1,4 +1,4 @@
-package com.javacodegeeks.enterprise.ws;
+package com.javacodegeeks.ws.client;
 
 import javax.xml.namespace.QName;
 import javax.xml.ws.*;
@@ -10,11 +10,11 @@ import java.net.URL;
  * JAX-WS RI 2.2.4-b01
  * Generated source version: 2.2
  */
-@WebServiceClient(name="WebServiceImplService", targetNamespace="http://ws.enterprise.javacodegeeks.com/", wsdlLocation="http://localhost:8888/webserive/helloworld?wsdl")
+@WebServiceClient(name="WebServiceImplService", targetNamespace="http://server.ws.javacodegeeks.com/", wsdlLocation="http://localhost:8888/webserive/helloworld?wsdl")
 public class WebServiceImplService extends Service {
     private final static URL WEBSERVICE_WSDL_LOCATION;
     private final static WebServiceException WEBSERVICE_EXCEPTION;
-    private final static QName WEBSERVICE_QNAME = new QName("http://ws.enterprise.javacodegeeks.com/", "WebServiceImplService");
+    private final static QName WEBSERVICE_QNAME = new QName("http://server.ws.javacodegeeks.com/", "WebServiceImplService");
 
     static {
         URL url = null;
@@ -58,7 +58,7 @@ public class WebServiceImplService extends Service {
      */
     @WebEndpoint(name="WebServiceImplPort")
     public WebServiceInterface getWebServiceImplPort() {
-        return super.getPort(new QName("http://ws.enterprise.javacodegeeks.com/", "WebServiceImplPort"), WebServiceInterface.class);
+        return super.getPort(new QName("http://server.ws.javacodegeeks.com/", "WebServiceImplPort"), WebServiceInterface.class);
     }
 
     /**
@@ -69,7 +69,7 @@ public class WebServiceImplService extends Service {
      */
     @WebEndpoint(name="WebServiceImplPort")
     public WebServiceInterface getWebServiceImplPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://ws.enterprise.javacodegeeks.com/", "WebServiceImplPort"), WebServiceInterface.class, features);
+        return super.getPort(new QName("http://server.ws.javacodegeeks.com/", "WebServiceImplPort"), WebServiceInterface.class, features);
     }
 
     private static URL __getWsdlLocation() {

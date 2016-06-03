@@ -12,7 +12,7 @@ import javax.xml.ws.Action;
  * JAX-WS RI 2.2.4-b01
  * Generated source version: 2.2
  */
-@WebService(name="WebServiceInterface", targetNamespace="http://server.ws.javacodegeeks.com/") // com.javacodegeeks.enterprise.ws
+@WebService(name="WebServiceInterface", targetNamespace="http://server.ws.javacodege.com/") // com.javacodegeeks.enterprise.ws
 @SOAPBinding(style=SOAPBinding.Style.RPC)
 public interface WebServiceInterface {
     /**
@@ -22,7 +22,7 @@ public interface WebServiceInterface {
      */
     @WebMethod
     @WebResult(partName="return")
-    @Action(input="http://server.ws.javacodegeeks.com/WebServiceInterface/getHelloWorldAsStringRequest", output="http://server.ws.javacodegeeks.com/WebServiceInterface/getHelloWorldAsStringResponse")
+    @Action(input="http://server.ws.javacode.com/WebServiceInterface/getHelloWorldAsStringRequest", output="http://server.ws.javacode.com/WebServiceInterface/getHelloWorldAsStringResponse")
     public String getHelloWorldAsString(@WebParam(name="arg0", partName="arg0") String arg0);
 
 }

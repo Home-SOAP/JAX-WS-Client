@@ -10,7 +10,7 @@ import java.net.URL;
  * JAX-WS RI 2.2.4-b01
  * Generated source version: 2.2
  */
-@WebServiceClient(name="WebServiceImplService", targetNamespace="http://server.ws.javacodegeeks.com/", wsdlLocation="http://localhost:8888/webserive/helloworld?wsdl")
+@WebServiceClient(name="WebServiceImplService", targetNamespace="http://server.ws.javacodegeeks.com/", wsdlLocation="http://localhost:8888/ws/helloworld?wsdl")
 public class WebServiceImplService extends Service {
     private final static URL WEBSERVICE_WSDL_LOCATION;
     private final static WebServiceException WEBSERVICE_EXCEPTION;
@@ -20,7 +20,7 @@ public class WebServiceImplService extends Service {
         URL url = null;
         WebServiceException exception = null;
         try {
-            url = new URL("http://localhost:8888/webserive/helloworld?wsdl");
+            url = new URL("http://localhost:8888/ws/helloworld?wsdl");
         } catch (MalformedURLException ex) {
             exception = new WebServiceException(ex);
         }

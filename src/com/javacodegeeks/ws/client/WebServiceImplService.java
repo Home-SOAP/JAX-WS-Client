@@ -32,25 +32,25 @@ public class WebServiceImplService extends Service {
         super(__getWsdlLocation(), WEBSERVICE_QNAME);
     }
 
-    public WebServiceImplService(WebServiceFeature... features) {
-        super(__getWsdlLocation(), WEBSERVICE_QNAME, features);
-    }
-
-    public WebServiceImplService(URL wsdlLocation) {
-        super(wsdlLocation, WEBSERVICE_QNAME);
-    }
-
-    public WebServiceImplService(URL wsdlLocation, WebServiceFeature... features) {
-        super(wsdlLocation, WEBSERVICE_QNAME, features);
-    }
-
-    public WebServiceImplService(URL wsdlLocation, QName serviceName) {
-        super(wsdlLocation, serviceName);
-    }
-
-    public WebServiceImplService(URL wsdlLocation, QName serviceName, WebServiceFeature... features) {
-        super(wsdlLocation, serviceName, features);
-    }
+//    public WebServiceImplService(WebServiceFeature... features) {
+//        super(__getWsdlLocation(), WEBSERVICE_QNAME, features);
+//    }
+//
+//    public WebServiceImplService(URL wsdlLocation) {
+//        super(wsdlLocation, WEBSERVICE_QNAME);
+//    }
+//
+//    public WebServiceImplService(URL wsdlLocation, WebServiceFeature... features) {
+//        super(wsdlLocation, WEBSERVICE_QNAME, features);
+//    }
+//
+//    public WebServiceImplService(URL wsdlLocation, QName serviceName) {
+//        super(wsdlLocation, serviceName);
+//    }
+//
+//    public WebServiceImplService(URL wsdlLocation, QName serviceName, WebServiceFeature... features) {
+//        super(wsdlLocation, serviceName, features);
+//    }
 
     /**
      * @return
